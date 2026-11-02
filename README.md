@@ -5,7 +5,7 @@ A survival-analysis framing of aero-engine degradation with competing risks, on 
 
 | read | for |
 |---|---|
-| `docs/START_HERE.md` | the step-by-step path: what to do at each stage |
+| `docs/STEPS.md` | the step-by-step path: what to do at each stage |
 | `docs/learn/` | glossary, worked examples, FAQ, self-test, runnable walkthrough |
 | `docs/PLAN.md` | status, decisions and findings per stage |
 
