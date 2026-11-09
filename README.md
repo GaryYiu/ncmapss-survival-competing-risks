@@ -25,3 +25,21 @@ see `data/README.md`
 src/            one script per step
 docs/           plan, stage guides, pseudocode, checklists
 ```
+
+## Setup
+
+Requires [uv](https://docs.astral.sh/uv/) (`brew install uv`).
+
+```bash
+uv sync                          # creates .venv and installs the exact versions in uv.lock
+uv run python src/descriptive.py # if you want to run the descriptive survival
+```
+
+Python version is pinned in `.python-version`; uv downloads it if you don't have it already.
+Use `uv run <command>` for everything
+
+## Data
+
+Raw N-CMAPSS data (19 GB) is not included. The derived tables in `data/derived/` are,
+so every stage except Stage 1 runs without it. To rebuild them, download the data and set `NCMAPSS_DIR` to the folder, then run
+`uv run python src/survival_table.py --build`.
